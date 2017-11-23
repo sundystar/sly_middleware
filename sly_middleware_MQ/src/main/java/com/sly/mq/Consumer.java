@@ -48,15 +48,7 @@ public class Consumer {
                                           if(msg.getTags() != null && msg.getTags().equals("TagA")) {  
                                                    //执行TagA的消费  
                                                    System.out.println(new String(msg.getBody()));  
-                                          }else if (msg.getTags() != null  
-                                                            &&msg.getTags().equals("TagC")) {  
-                                                   //执行TagC的消费  
-                                                   System.out.println(new String(msg.getBody()));  
-                                          }else if (msg.getTags() != null  
-                                                            &&msg.getTags().equals("TagD")) {  
-                                                   //执行TagD的消费  
-                                                   System.out.println(new String(msg.getBody()));  
-                                          }  
+                                          }
                                 }else if (msg.getTopic().equals("TopicTest2")) {  
                                           System.out.println(new String(msg.getBody()));  
                                 }  
